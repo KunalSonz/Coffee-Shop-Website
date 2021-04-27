@@ -1,1 +1,2 @@
-# Coffee-Shop-Website
+# Coffee-Shop-Website  
+HTML + CSS Mobile Responsive Website
