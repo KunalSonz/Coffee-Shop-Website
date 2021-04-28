@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#fold1 {
+  background-image: url(fold1.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+nav a {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 70px;
+  top: 40px;
+  left: 5%;
+}
+
+.fold1a {
+  margin-top: 10%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.fold1a img {
+  height: 350px;
+}
+
+.fold1b {
+  display: flex;
+  align-items: center;
+}
+
+.fold1b h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.fold1b p {
+  color: white;
+  font-size: 25px;
+}
+
+.fold1b a {
+  position: relative;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transition: border-bottom 500ms ease-in-out;
+}
+
+.fold1b a::before {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 33px;
+  background-color: black;
+  position: absolute;
+  transition: transform 200ms ease-in-out;
+  transform: scaleX(0);
+}
+
+.fold1b a:hover::before,
+.fold1b a:focus::before {
+  transform: scaleX(1);
+}
+
+#fold2 {
+  background-color: #242121;
+  background-image: url(coffebackground2.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fold2 img {
+  width: 100%;
+  height: auto;
+}
+
+#fold3 {
+  background-color: #242121;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fold3a {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+}
+
+.fold3b {
+  padding: 20px;
+  height: 70vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 70vh;
+}
+
+#fold4 {
+  background-image: url(coffebackground3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  width: 100%;
+  height: 130vh;
+}
+
+.topfold4 {
+  padding-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topfold4 h1 {
+  color: black;
+  font-size: 60px;
+  border: 5px solid black;
+}
+
+.botfold4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.fold4b {
+  padding-top: 85%;
+}
+
+.card {
+  margin: 30px;
+  height: 90vh;
+}
+
+.card img {
+  height: 60vh;
+}
+
+#abfold1 {
+  background-image: url(fold1.png);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.aboutus {
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.aboutus h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.aboutus p {
+  color: white;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1125px) {
+  #fold1 {
+    height: 50vh;
+  }
+
+  .fold1a {
+    grid-template-columns: 50% 50%;
+  }
+
+  #fold2 {
+    height: 30vh;
+  }
+
+  .fold3a {
+    grid-template-columns: 1fr;
+  }
+
+  .fold3b {
+    height: 30vh;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 20vh;
+  }
+
+  .topfold4 h1 {
+    color: brown;
+    border: 5px solid brown;
+  }
+
+  .botfold4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    height: 50vh;
+  }
+
+  .fold4a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .fold1a {
+    grid-template-columns: 40% 60%;
+  }
+
+  .fold1a img {
+    height: 200px;
+  }
+
+  #fold2 img {
+    width: 80%;
+    height: auto;
+  }
+
+  .fold2a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #fold1 {
+    height: 80vh;
+  }
+
+  nav a {
+    padding-left: 10px;
+  }
+
+  .fold1a {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .fold1b {
+    margin-left: 10%;
+  }
+
+  #fold4 {
+    height: 285vh;
+  }
+
+  .botfold4 {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 65vh;
+    margin: 10px;
+  }
+
+  .card img {
+    height: 30vh;
+  }
+
+  .topfold4 {
+    padding-top: 30px;
+  }
+
+  .topfold4 h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #fold1 {
+    height: 110vh;
+  }
+
+  .nav a {
+    padding-left: 2px;
+  }
+}
